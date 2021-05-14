@@ -37,7 +37,7 @@ if __name__ == '__main__':
     print("generating data")
     generate_data("./src/web/graph.json")
     print("waiting a second to start web browser")
-    Timer(1, open_browser).start();
+    Timer(0.1, open_browser).start();
     print("starting flask application")
     app.run(port=8000)
 
